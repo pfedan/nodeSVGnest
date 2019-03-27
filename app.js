@@ -3,12 +3,10 @@ var app = express();
 var args = process.argv.slice(2);
 var port;
 
-console.log(args);
-
 if (args[0]) {
-  port = args[0]
+  port = args[0];
 } else {
-  port = 3000
+  port = 3000;
 }
 
 app.use(express.static('public'));
